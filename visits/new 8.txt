@@ -1,0 +1,46 @@
+Install Kubectl
+In your terminal run the following:
+
+curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
+
+chmod +x ./kubectl
+
+sudo mv ./kubectl /usr/local/bin/kubectl
+
+
+
+Check your Installation:
+
+kubectl version
+
+
+
+See also official docs:
+https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl-on-linux
+
+
+
+Install Minikube
+In your terminal run the following:
+
+curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 && chmod +x minikube
+
+sudo install minikube /usr/local/bin
+
+
+
+Check your installation:
+
+minikube version
+
+
+
+Start Minikube:
+
+minikube start
+
+
+
+See also official docs:
+
+https://kubernetes.io/docs/tasks/tools/install-minikube/
