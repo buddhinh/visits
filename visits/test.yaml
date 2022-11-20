@@ -1,0 +1,14 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: visits
+spec:
+  template:
+    metadata:
+      name: visits-pod
+    spec:
+      containers:
+      - name: visits
+        image: buddhinh/visits
+        # imagePullPolicy: Never
+      restartPolicy: Never
